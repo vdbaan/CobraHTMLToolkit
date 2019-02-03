@@ -24,11 +24,16 @@
 package org.lobobrowser.util;
 
 import java.util.*;
+import java.util.function.UnaryOperator;
 
 public class ListSet implements List, Set {
 	private final List list = new ArrayList();
 	private final Set set = new HashSet();
-	
+
+	@Override
+	public Spliterator spliterator() {
+		return List.super.spliterator();
+	}
 	public ListSet() {
 		super();
 	}
@@ -84,6 +89,11 @@ public class ListSet implements List, Set {
 			}
 		}
 		return changed;
+	}
+
+	@Override
+	public void replaceAll(UnaryOperator operator) {
+
 	}
 
 	/* (non-Javadoc)

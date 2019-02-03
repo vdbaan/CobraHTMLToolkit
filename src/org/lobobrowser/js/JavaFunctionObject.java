@@ -20,6 +20,7 @@
 */
 package org.lobobrowser.js;
 
+import org.lobobrowser.util.Objects;
 import org.mozilla.javascript.*;
 import java.lang.reflect.*;
 import java.util.logging.*;

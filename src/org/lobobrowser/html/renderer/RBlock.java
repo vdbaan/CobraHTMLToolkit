@@ -36,6 +36,7 @@ import org.lobobrowser.html.*;
 import org.lobobrowser.html.domimpl.*;
 import org.lobobrowser.html.style.*;
 import org.lobobrowser.util.*;
+import org.lobobrowser.util.Objects;
 import org.w3c.dom.Node;
 
 /**
