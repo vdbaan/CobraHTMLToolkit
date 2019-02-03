@@ -207,7 +207,8 @@ public class FontFactory {
 	
 	private Font createFont(String name, int style, int size) {
 		// Proprietary Sun API. Maybe shouldn't use it. Works well for Chinese.
-	    return FontManager.getCompositeFontUIResource(new Font(name, style, size));
+//	    return FontManager.getCompositeFontUIResource(new Font(name, style, size));
+		return new javax.swing.plaf.FontUIResource(name, style, size);
 	}
 	
 	private static class FontKey {
