@@ -33,6 +33,8 @@ dependencies {
 }
 
 sourceSets.main.java.srcDirs = ['src']
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
 
 version = getVersionName()
 
